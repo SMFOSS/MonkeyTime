@@ -6,8 +6,7 @@ version = '0.1'
 setup(name='MonkeyTime',
       version=version,
       description="Timing context managers for service oriented architecture stacks",
-      long_description="""\
-""",
+      long_description="""    """,
       classifiers=[], # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
       keywords='instrumentation timing monitoring http',
       author='whit at surveymonkey.com',
@@ -17,9 +16,10 @@ setup(name='MonkeyTime',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       include_package_data=True,
       zip_safe=False,
-      install_requires=[
-          # -*- Extra requirements: -*-
-      ],
+      install_requires=["statlib",
+                        "webob",
+                        "melk.util"
+                        ],
       entry_points="""
       # -*- Entry points: -*-
       """,
